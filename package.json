@@ -6,7 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview --port 5173"
+    "preview": "vite preview --port 5173",
+    "start": "serve -s dist -l ${PORT:-5173}"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
   },
   "dependencies": {
     "@quasar/extras": "^1.16.12",
@@ -14,6 +19,7 @@
     "axios": "^1.7.7",
     "moment": "^2.30.1",
     "quasar": "^2.16.6",
+    "serve": "^14.2.1",
     "vue": "^3.4.38",
     "vue3-apexcharts": "^1.10.0"
   },

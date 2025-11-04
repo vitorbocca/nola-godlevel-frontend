@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const baseURL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3000';
+// Use relative URLs when VITE_API_BASE_URL is not set (for proxy) or use the provided URL
+const baseURL = import.meta.env.VITE_API_BASE_URL || '';
 
 export const api = axios.create({ baseURL });
 
